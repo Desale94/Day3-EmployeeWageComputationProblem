@@ -1,14 +1,14 @@
 package com.bridgelabz.employee;
 
 public class EmpWageBuilder {
-    public static final int Is_Part_Time = 1;
-    public static final int Is_Full_Time = 2;
-    public static final int EMP_RATE_PER_HOUR = 20;
-    public static final int NUM_OF_WORKING_DAYS = 20;
-    public static final int MAX_HRS_IN_MONTH = 100;
+    public static void CalculateTotalWage() {
 
 
-    public static void main(String[] args) {
+        final int Is_Part_Time = 1;
+        final int Is_Full_Time = 2;
+        final int EMP_RATE_PER_HOUR = 20;
+        final int NUM_OF_WORKING_DAYS = 20;
+        final int MAX_HRS_IN_MONTH = 100;
 
         //variables
         int empHrs = 0, totalEmpHrs= 0, totalWorkingDays = 0;
@@ -32,5 +32,8 @@ public class EmpWageBuilder {
         }
         int totalEmpWage=totalEmpHrs * EMP_RATE_PER_HOUR;
         System.out.println("Total Emp Wage: " + totalEmpWage);
+    }
+    public static void main(String[] args){
+        CalculateTotalWage();
     }
 }
